@@ -6,7 +6,7 @@ http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipaddr_nat/configuration/15-mt/
 
 ## VLAN Configuration
 
-'''
+```
 interface GigabitEthernet0/1
  no ip address
  duplex auto
@@ -38,4 +38,4 @@ interface GigabitEthernet0/1.5
  encapsulation dot1Q 5
  ip address 10.0.4.1 255.255.255.240
 !
-'''
+```
