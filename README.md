@@ -39,3 +39,23 @@ interface GigabitEthernet0/1.5
  ip address 10.0.4.1 255.255.255.240
 !
 ```
+## DHCP Configuration
+
+```
+ip dhcp excluded-address 10.0.0.1 10.0.0.2
+ip dhcp excluded-address 10.0.1.1 10.0.1.2
+ip dhcp excluded-address 10.0.2.1 10.0.2.2
+!
+ip dhcp pool IT
+ network 10.0.0.0 255.255.255.240
+ default-router 10.0.0.1
+ dns-server 10.0.0.1
+ip dhcp pool Accounting
+ network 10.0.1.0 255.255.255.240
+ default-router 10.0.1.1
+ dns-server 10.0.1.1
+ip dhcp pool Claims
+ network 10.0.2.0 255.255.255.240
+ default-router 10.0.2.1
+ dns-server 10.0.2.1
+ ```
