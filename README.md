@@ -59,3 +59,6 @@ ip dhcp pool Claims
  default-router 10.0.2.1
  dns-server 10.0.2.1
  ```
+## Blocking a Domain
+
+https://www.tunnelsup.com/using-just-a-cisco-asa-to-block-specific-websites/
