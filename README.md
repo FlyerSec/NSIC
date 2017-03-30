@@ -126,6 +126,7 @@ switchport voice vlan 6
 ```
 
 Plug the phone in and after it comes up go back to the Router to add the following configuration
+*The ephones will automatically be created once the phone reaches the router. Just add the type and the button configuration.
 ```
 ephone 1
  device-security-mode none
