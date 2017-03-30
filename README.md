@@ -104,8 +104,8 @@ ephone-dn 2
 ```
 
 Setup dial-peer to call out to other teams
--If an external team has the extension 1001 then the pattern would be 1... and if they had 2001 then it would be 2... and so on.
--session target is the IP of the other teams router
+* If an external team has the extension 1001 then the pattern would be 1... and if they had 2001 then it would be 2... and so on.
+* session target is the IP of the other teams router
 ```
 dial-peer voice 1 voip
  destination-pattern 1...
