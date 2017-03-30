@@ -141,6 +141,30 @@ ephone 2
  button 1:2
  ```
 
+## DHCP Snooping
+
+Configure DHCP snooping on the switch
+
+```
+ip dhcp snooping vlan 1,2,3,4,5,6
+```
+
+Then add this command to the interface that the DHCP server is on (the port that connects to the router in this case)
+```
+ip dhcp snooping trust
+```
+
+## Port Security
+
+Configure port security on the switch host ports (set the MAC address of the PCs connected to each port)
+```
+interface FastEthernet0/1
+ switchport mode access
+ switchport port-security
+ switchport port-security maximum 5
+ switchport port-security mac-address 0001.96A2.906C
+```
+
 
 
 ## Blocking a Domain
